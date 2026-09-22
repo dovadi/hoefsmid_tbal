@@ -412,6 +412,10 @@
             section {
                 padding: 60px 0
             }
+
+            .desktop-only {
+                display: none;
+            }
         }
 
         @media(max-width:420px) {
@@ -420,7 +424,7 @@
             }
 
             .logo {
-                width: 155px
+                width: 100px
             }
 
             .hero-content {
@@ -436,11 +440,19 @@
 
 <body>
     <header class="nav">
-        <div class="container nav-inner"><a href="#home"><img class="logo" src="logo.png" alt="Hoefsmid T.Bal logo"></a>
-            <nav class="links" id="links"><a href="#diensten">Diensten</a><a href="#prijzen">Prijzen</a><a
-                    href="#over">Over mij</a><a href="#werkgebied">Werkgebied</a><a href="#contact">Contact</a></nav>
-            <div><a class="btn primary" href="tel:+31623694148">Bel voor afspraak</a><button class="menu" id="menu"
-                    aria-label="Menu">☰</button></div>
+        <div class="container nav-inner">
+            <a href="#home"><img class="logo" src="logo.png" alt="Hoefsmid T.Bal logo"></a>
+            <nav class="links" id="links">
+                <a href="#diensten">Diensten</a>
+                <a href="#prijzen">Prijzen</a>
+                <a href="#over">Over mij</a>
+                <a href="#werkgebied">Werkgebied</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div>
+                <a class="btn primary desktop-only" href="tel:+31623694148">Bel voor afspraak</a>
+                <button class="menu" id="menu" aria-label="Menu">☰</button>
+            </div>
         </div>
     </header>
     <main>
